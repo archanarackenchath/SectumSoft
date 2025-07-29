@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SectumSoft - Complete Software Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">SectumSoft</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#game" class="nav-link">3D Game</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-3d" id="hero3d"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Complete Software</span>
+                    <span class="gradient-text">Solutions</span>
+                </h1>
+                <p class="hero-subtitle">
+                    We are a collective of elite freelance developers providing end-to-end digital solutions. 
+                    From web development to digital marketing, we've got you covered.
+                </p>
+                <div class="hero-buttons">
+                    <a href="tel:9995454086" class="btn btn-primary">Contact</a>
+                    <a href="https://www.instagram.com/varun___das_/" target="_blank" class="btn btn-secondary">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About SectumSoft</h2>
+                <p class="section-subtitle">A collective of passionate developers united by excellence</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who We Are</h3>
+                    <p>SectumSoft is a dynamic collective of skilled freelance developers who have joined forces to deliver comprehensive software solutions. We combine individual expertise with collaborative strength to tackle projects of any scale.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Expert Developers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-animation" id="codeAnimation"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services cursor-3d">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Complete digital solutions under one roof</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="web">
+                    <div class="service-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive websites and web applications built with cutting-edge technologies.</p>
+                    <ul class="service-features">
+                        <li>React, Vue, Angular</li>
+                        <li>Node.js, PHP, Python</li>
+                        <li>E-commerce Solutions</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-service="mobile">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile App Development</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android.</p>
+                    <ul class="service-features">
+                        <li>React Native, Flutter</li>
+                        <li>iOS & Android Native</li>
+                        <li>Progressive Web Apps</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-service="marketing">
+                    <div class="service-icon">📈</div>
+                    <h3>Digital Marketing</h3>
+                    <p>Comprehensive digital marketing strategies to grow your online presence.</p>
+                    <ul class="service-features">
+                        <li>SEO & SEM</li>
+                        <li>Content Marketing</li>
+                        <li>Analytics & Reporting</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-service="ads">
+                    <div class="service-icon">🎬</div>
+                    <h3>Advertisement & TV Ads</h3>
+                    <p>Creative advertising solutions for television, digital platforms, and product promotion.</p>
+                    <ul class="service-features">
+                        <li>TV Commercial Production</li>
+                        <li>Product Advertisements</li>
+                        <li>Brand Campaigns</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-service="social">
+                    <div class="service-icon">📊</div>
+                    <h3>Social Media Management</h3>
+                    <p>Complete social media strategy, content creation, and community management.</p>
+                    <ul class="service-features">
+                        <li>Content Strategy</li>
+                        <li>Community Management</li>
+                        <li>Social Analytics</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-service="consulting">
+                    <div class="service-icon">💡</div>
+                    <h3>Technical Consulting</h3>
+                    <p>Expert guidance on technology choices, architecture, and digital transformation.</p>
+                    <ul class="service-features">
+                        <li>Architecture Planning</li>
+                        <li>Technology Audit</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio floating-shapes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-subtitle">Showcasing our best work and client success stories</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Brand Marketing Campaign">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Brand Marketing Campaign</h3>
+                        <p>360° digital marketing campaign with social media integration</p>
+                        <div class="portfolio-tags">
+                            <span>Digital Marketing</span>
+                            <span>Social Media</span>
+                            <span>Brand Strategy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Software Development">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Software Development</h3>
+                        <p>Custom software solutions with modern technologies</p>
+                        <div class="portfolio-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Full Stack</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Product Advertisement">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Product Advertisement</h3>
+                        <p>Creative product ads for television and digital platforms</p>
+                        <div class="portfolio-tags">
+                            <span>TV Ads</span>
+                            <span>Product Marketing</span>
+                            <span>Creative Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Game Section -->
+    <section id="game" class="game-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">3D Interactive Experience</h2>
+                <p class="section-subtitle">Experience our 3D development skills with this interactive cube game</p>
+            </div>
+            <div class="game-container">
+                <div class="game-canvas" id="gameCanvas"></div>
+                <div class="game-controls">
+                    <h3>Interactive 3D Cube Game</h3>
+                    <p>Click and drag to rotate the cubes. Use mouse wheel to zoom in/out.</p>
+                    <div class="game-stats">
+                        <div class="game-stat">
+                            <span class="stat-label">Cubes:</span>
+                            <span class="stat-value" id="cubeCount">12</span>
+                        </div>
+                        <div class="game-stat">
+                            <span class="stat-label">Rotation Speed:</span>
+                            <span class="stat-value" id="rotationSpeed">1x</span>
+                        </div>
+                    </div>
+                    <div class="game-buttons">
+                        <button class="btn btn-primary" onclick="addCube()">Add Cube</button>
+                        <button class="btn btn-secondary" onclick="resetGame()">Reset</button>
+                        <button class="btn btn-secondary" onclick="toggleSpeed()">Speed Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your next project? Let's discuss your needs</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Build Something Amazing</h3>
+                    <p>We're here to help you transform your ideas into reality. Whether you need a website, mobile app, or complete digital solution, our team is ready to deliver excellence.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>contact@sectumsoft.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>9995454086</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🌍</span>
+                            <span>Kollengode, Palakkad, Kerala</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Service</option>
+                            <option value="web">Web Development</option>
+                            <option value="mobile">Mobile App Development</option>
+                            <option value="marketing">Digital Marketing</option>
+                            <option value="ads">Advertisement & TV Ads</option>
+                            <option value="social">Social Media Management</option>
+                            <option value="consulting">Technical Consulting</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tell us about your project" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SectumSoft</h3>
+                    <p>Complete software solutions by a collective of expert freelance developers.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Mobile Apps</li>
+                        <li>Digital Marketing</li>
+                        <li>Advertisement</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Portfolio</li>
+                        <li>3D Game</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">GitHub</a>
+                        <a href="#">Dribbble</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SectumSoft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
